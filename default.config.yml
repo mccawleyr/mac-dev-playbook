@@ -6,12 +6,10 @@ configure_osx: true
 # Set to 'true' to configure the Dock via dockutil.
 configure_dock: false
 dockitems_remove: []
-- Launchpad
-- TV
-- Podcasts
-- Safari
-- 'App Store'
-- 'iPhone Mirroring'
+# - Launchpad
+# - TV
+# - Podcasts
+# - 'App Store'
 dockitems_persist: []
 # - name: "Sublime Text"
 #   path: "/Applications/Sublime Text.app/"
@@ -24,9 +22,9 @@ sudoers_custom_config: ''
 #   # Allow users in admin group to use sudo with no password.
 #   %admin ALL=(ALL) NOPASSWD: ALL
 
-dotfiles_repo: https://github.com/mccawleyr/dotfiles.git
+dotfiles_repo: https://github.com/geerlingguy/dotfiles.git
 dotfiles_repo_accept_hostkey: true
-dotfiles_repo_local_destination: ~/GitRepos/dotfiles
+dotfiles_repo_local_destination: ~/Development/GitHub/dotfiles
 dotfiles_files:
   - .zshrc
   - .gitignore
@@ -68,6 +66,7 @@ homebrew_cask_appdir: /Applications
 homebrew_cask_apps:
   - chromedriver
   - docker
+  - dropbox
   - firefox
   - google-chrome
   - handbrake
